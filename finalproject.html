@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final Project - Landing Page</title>
+    <style>
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        color: #313131;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+
+      h2 {
+        color: #71aab1;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      a {
+        font-size: 18px;
+        color: #313131;
+        text-decoration: underline;
+        font-family: monospace;
+        text-align: left;
+        padding: 20px 30px;
+        margin: 20 auto;
+      }
+      a:visited {
+        color: #0f5473;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #d65d65;
+        background: #d65d65;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      }
+
+      button:hover {
+        background: white;
+        color: #d65d65;
+        border: 1px solid #d65d65;
+      }
+      .mainBox {
+        background: linear-gradient(to right bottom, #f6ede8 20%, #71aab1);
+        list-style: none;
+
+        padding: 20px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .info {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 30px;
+        margin: 20 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainBox">
+      <h1>The Legend of Zelda:</h1>
+      <br />
+      <h2>Breath of the Wild</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/001/original/The_Legend_of_Zelda_Breath_of_the_Wild.jpeg?1662865119"
+        alt="cover of BOTW game"
+      />
+      <p class="info">
+        <strong>The Legend of Zelda: Breath of the Wild</strong> is a 2017
+        action-adventure game developed and published by Nintendo for the
+        Nintendo Switch and Wii U consoles. The game is an installment of The
+        Legend of Zelda series and is set at the end of its timeline. The player
+        controls an amnesiac Link, who awakens from a hundred-year slumber, and
+        attempts to regain his memories and prevent the destruction of Hyrule by
+        Calamity Ganon. Similar to the original 1986 The Legend of Zelda game,
+        players are given little instruction and can explore the open world
+        freely. Tasks include collecting various items and gear to aid in
+        objectives such as puzzle-solving or side quests. The world is
+        unstructured and designed to encourage exploration and experimentation,
+        and the main story quest can be completed in a nonlinear fashion.
+      </p>
+      <span>
+        <a
+          href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+          target="_blank"
+          >Read the Wiki</a
+        >
+      </span>
+      <button id="wikiBtn" onclick="played()">Have you played yet?</button>
+      <script>
+        function played() {
+          let playedGame = prompt("Have you played yet?");
+          if (playedGame === "yes") {
+            alert("Yay! Zelda Party!!");
+          } else {
+            alert("Then go play it!!!");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
